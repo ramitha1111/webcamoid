@@ -1,6 +1,9 @@
 name: Arch Linux
 
-on: [push, pull_request]
+on:
+  workflow_dispatch:
+  "push":
+  "pull_request":
 
 env:
   QTIFWVER: 4.8.1
